@@ -33,5 +33,9 @@ public class Ticket {
   @JoinColumn(name = "tour_id")
   private Tour tour;
 
+  @ManyToOne
+  @JoinColumn(name = "customer_id")
+  private Customer customer;
+
 
 }
